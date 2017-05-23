@@ -1,0 +1,4 @@
+comment = 'collection of network related types'
+default_version = '1.0'
+module_pathname = '$libdir/nettypes'
+relocatable = true
