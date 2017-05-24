@@ -4,7 +4,7 @@ PG_CPPFLAGS = -I$(libpq_srcdir)
 LDFLAGS_SL += -lz
 
 EXTENSION = zchar
-DATA = zchar.sql
+DATA = zchar--1.0.sql
 
 ifdef USE_PGXS
 PG_CONFIG = pg_config
