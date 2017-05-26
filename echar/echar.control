@@ -1,0 +1,4 @@
+comment = 'character datatype for storing strings encrypted'
+default_version = '1.0'
+module_pathname = '$libdir/echar'
+relocatable = true
