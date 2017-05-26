@@ -3,7 +3,11 @@ Various useful datatypes for PostgreSQL powered data warehouses
 
 ## zchar
 
-Simple data type to store strings as Zlib-compressed blobs. This type should support most varchar operators via assignment.
+Simple data type to store strings as Zlib-compressed blobs. This type should support most varchar operators via assignment. 
+
+## echar
+
+This datatype implements storing of strings in AES encrypted form. It is specifically intended for encryption-at-rest in multi-tenant databases where rows in the same table could belong to different tenants. It does support indexing, but due to its "fail on bad key" behavior multi-tenant tables should be partitioned with each tenant's rows being grouped in a separate parition thus also allowing index seggregation. See included README.txt for simple example on usage of that type.
 
 ## nettypes
 
