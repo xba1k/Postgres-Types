@@ -21,7 +21,7 @@ Implements a set of datatypes useful for storage of network data.
 ## intlist
 
 This was a proof of concept demonstrating a datatype that could store comma-seperated lists of integers (i.e. 100,3,423,4) more
-efficiently than just text while being transparent to the application and not suffering from compression related performance penalties. In addition to parsing the string into an array of integers it utilizes bits from https://github.com/lemire/FastPFor project to perform extremely fast delta encoding and bit packing operations on these integers thus reducing the on-disk column footprint. It has demonstrated size reduction from 24GB down to 7GB using real production dataset. Lists stored will be sorted in order to facilitate delta-encoding. This extension depends on libsnappy.
+efficiently than just text while being transparent to the application and not suffering from compression related performance penalties. In addition to parsing the string into an array of integers it utilizes bits from https://github.com/lemire/FastPFor project to perform extremely fast delta encoding and bit packing operations on these integers thus reducing the on-disk column footprint. It has demonstrated size reduction from 24GB down to 7GB using a real production dataset. Lists stored will be sorted in order to facilitate delta encoding. This extension depends on libsnappy.
 
 ## Build/Install
 
