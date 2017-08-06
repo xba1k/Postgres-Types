@@ -1,0 +1,4 @@
+comment = 'datatype for representing integer lists'
+default_version = '1.0'
+module_pathname = '$libdir/intlist'
+relocatable = true
